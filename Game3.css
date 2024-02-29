@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c1666f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    color: #e0d618;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.mole-hole {
+    width: 100px;
+    height: 100px;
+    background-color: #c2b280;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mole {
+    width: 80px;
+    height: 80px;
+    background-color: #6e0707;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+}
+
+#score {
+    color: #333;
+}
+
+.mole.up {
+    display: block;
+}
